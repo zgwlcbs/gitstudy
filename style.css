@@ -33,9 +33,54 @@ body {
 	list-style: none;
 }
 
+.navigator ul li a:hover {
+	background-color: blue ;
+	color: white;
+}
+
 .slider {
 	clear: both;
 	overflow: hidden;
 	padding: 20px 0;
 }
+
+.sidebar {
+	width: 120px;
+}
+
+.sidebar-title {
+	width: 100px;
+	background-color: red;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.sidebar-title span {
+	background-color: yellow;
+	margin-left: 10px;
+}
+
+.sidebar-content {
+	border: 1px solid grey;
+}
+
+.sidebar-content ul {
+}
+
+.sidebar-content ul li {
+	list-style: none;
+	background-image: url('images/little.png');
+	background-position: 10px 10px;
+}
+
+.sidebar-content ul li a {
+	display: block;
+}
+
+.sidebar-content ul li a:hover {
+	background-color: blue;
+	color: white;
+}
+
+
 
