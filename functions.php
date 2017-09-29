@@ -17,6 +17,23 @@
 		            'after_title'=>'</h2>'
     			));
 			}
+			//文章缩略图
+			if(function_exists('add_theme_support')){
+				add_theme_support('post-thumbnails');
+			}
+			function catch_first_image(){
+				global $post,$posts;
+				$first_img = "";
+				ob_start();
+				ob_end_clean();
+				$output = preg_match_all('/<img.+src=[\""]([^\""]+)[\""].*>/i',$post->post_content,$matches);
+				$first_img = $matches[1][0];
+				if(empty($first_img)){
+					echo get_bloginfo('stylesheet_directory');
+					echo '/images/thumbnail_default.jpg';
+				}
+				return $first_img;
+			}
 		}
 	}
 	add_action( 'after_setup_theme', 'brandtheme_themesetup' );
