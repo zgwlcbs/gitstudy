@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>brand</title>
-		<link href="style_html.css" type="text/css" rel="stylesheet" />
+		<link href="css/style-html.css" type="text/css" rel="stylesheet" />
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="page">
-			<div class="header">
-				<div class="header-logo">
+			<div class="header row">
+				<div class="header-logo col-md-3">
 					<img class="logo" src="logo.jpg" alt="logo" />
 					<a href="#"><span class="logo-text">我的第一个博客</span></a>
 				</div><!--end of top-header-->
-				<div class="navigator">
+				<div class="navigator col-md-9">
 					<ul>
 						<li class="border-right"><a>首页</a></li>
 						<li class="border-right"><a>首部菜单项1</a></li>
@@ -37,11 +38,28 @@
 							<li><a>分类目录3</a></li>
 							<li><a>分类目录4</a></li>
 						</ul>
-					</div><!--end of grey-border-->
+					</div><!--end of sidebar-content-->
 				</div><!--end of sidebar-->
+				<div class="post-list">
+					<div class="post">
+						<div class="post-thumbnail">
+						</div><!--end of post-thumbnail-->
+						<div class="post-content">
+							<div class="post-metadata">
+							</div><!--end of post-metadata-->
+						</div><!--end of post-content-->
+					</div><!--end of post-->
+					<div class="paging">
+						<?php echo paginate-links( array(
+							'prev-text'=> --('« Previous'),
+							'next-text'=> --('Next »'),
+						)); ?>
+					</div><!--end of paging-->
+				</div><!--end of post-list-->
 			</div><!--end of content-->
 			<div class="footer">
 			</div><!--end of footer-->
 		</div><!--end of page-->
+		<script type="javascript" src="js/bootstrap.js">
 	</body>
 </html>

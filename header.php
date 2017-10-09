@@ -4,9 +4,13 @@
 		<meta charset="UTF-8" />
 		<title>brand</title>
 		<link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" />
+		<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="page">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
 			<div class="header">
 				<div class="header-logo">
 					<img class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.jpg" alt="logo" />
