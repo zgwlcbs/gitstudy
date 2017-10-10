@@ -56,14 +56,15 @@ body {
 .sidebar {
 	float: left;
 	border: 5px solid black;
-	margin-left: 15px;
 }
 
 .post-list {
 	float: right;
-	background-color: #CCCCCC;
-	margin: 10px;
 	padding: 10px 10px;
+}
+
+.main-content-background {
+	background-color: #CCCCCC;
 }
 
 .post {
@@ -88,8 +89,8 @@ body {
 }
 
 .footer-widget {
-	margin: 20px auto;
 	background-color: #555;
+	margin-top: 10px;
 }
 
 .vertical-ul {
@@ -106,8 +107,8 @@ body {
 }
 
 .copyright {
-	background-color: #F8F8FF;
-	text-align: center
+	background-color: #FFC0CB;
+	text-align: center;
 	margin: 0 auto;
 }
 
