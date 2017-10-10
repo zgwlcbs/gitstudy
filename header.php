@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>brand</title>
-		<link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" />
 		<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" rel="stylesheet" />
+		<link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="container">

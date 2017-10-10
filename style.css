@@ -49,13 +49,8 @@ body {
 }
 
 .slider {
-	clear: both;
-	overflow: hidden;
-	padding: 20px 0;
-}
-
-.imax {
-	border: 5px double #FFCC00;
+	background-color: #E6E6FA;
+	margin: 20px auto;
 }
 
 .sidebar {
@@ -90,4 +85,36 @@ body {
 
 .footer {
 	clear: both;
+}
+
+.footer-widget {
+	margin: 20px auto;
+	background-color: #555;
+}
+
+.vertical-ul {
+	list-style: none;
+}
+
+.horizontal-ul {
+	list-style: none;
+}
+
+.horizontal-ul li {
+	float: left;
+	margin: 0 5px;
+}
+
+.copyright {
+	background-color: #F8F8FF;
+	text-align: center
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding: 10px;
+}
+
+.white-font {
+	color: #FFF;
 }
