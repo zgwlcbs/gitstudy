@@ -11,10 +11,12 @@
 		<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
-			<div class="header">
-				<div class="header-logo">
-					<img class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.jpg" alt="logo" />
-					<a href="<?php bloginfo('url'); ?>"><span class="logo-text"><?php bloginfo('name'); ?></span></a>
-				</div><!--end of header-top-->
-				<?php wp_nav_menu(array('theme_location'=>'header_menu','container_class'=>'navigator','walker'=>new brand_menudescription())); ?>
-			</div><!--end of header-->
+			<div class="row">
+				<div class="header col-md-12 col-sm-12">
+					<div class="header-logo">
+						<img class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.jpg" alt="logo" />
+						<a href="<?php bloginfo('url'); ?>"><span class="logo-text"><?php bloginfo('name'); ?></span></a>
+					</div><!--end of header-top-->
+					<?php wp_nav_menu(array('theme_location'=>'header_menu','container_class'=>'navigator','walker'=>new brand_menudescription())); ?>
+				</div><!--end of header-->
+			</div>

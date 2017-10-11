@@ -74,10 +74,18 @@ body {
 
 .post-thumbnail {
 	float: left;
+	margin: 5px 5px 0 5px;
 }
 
 .post-content {
 	float: left;
+}
+
+.post-content p a {
+	float: right;
+	margin-right: 5px;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
 
 .paging {
@@ -118,4 +126,32 @@ body {
 
 .white-font {
 	color: #FFF;
+}
+
+.content-page {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+
+.content-page .wrapper {
+	margin-left: 20px;
+}
+
+.content-single {
+	float: left;
+	margin: 20px auto;
+}
+
+.content-single .wrapper {
+	margin-left: 20px;
+}
+
+.bread {
+	padding: 10px;
+}
+
+.clearboth {
+	clear: both;
 }

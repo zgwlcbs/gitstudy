@@ -22,27 +22,24 @@
 			<?php if(have_posts()) : ?>
 			<?php while(have_posts()) : the_post(); ?>
 			<div class="post">
-				<div class="post-thumbnail">
-					<a href="<?php the_permalink(); ?>" class="thumbnail">
-						<?php if(has_post_thumbnail()) : ?>
-						<?php the_post_thumbnail('thumbnail'); ?>
-						<?php else: ?>
-						<img src="<?php echo catch_first_image(); ?>"/>
-						<?php endif; ?>
-					</a>
-				</div><!--end of post-thumbnail-->
-				<div class="post-content">
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<p><?php the_content(); ?></p>
-					<p>
-						<div class="post-metadata">
-							<?php the_author(); ?>
-						</div><!--end of post-metadata-->
-					</p>
-					<p><a href="#" class="btn btn-primary" role="button">点击查看全文</a>
-				</div><!--end of post-content-->
+				<div class="row">
+					<div class="col-md-4 col-sm-12 post-thumbnail">
+						<a href="<?php the_permalink(); ?>" class="thumbnail">
+							<?php if(has_post_thumbnail()) : ?>
+							<?php the_post_thumbnail('thumbnail'); ?>
+							<?php else: ?>
+							<img src="<?php echo catch_first_image(); ?>"/>
+							<?php endif; ?>
+						</a>
+					</div><!--end of post-thumbnail-->
+					<div class="col-md-7 col-sm-12 post-content">
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						<p><?php echo mb_strimwidth(strip_tags(apply_filters('the_content',$post->post_content)),0,300,"......"); ?></p>
+						<p><a href="#" class="btn btn-primary" role="button">点击查看全文</a>
+					</div><!--end of post-content-->
+				</div>
 			</div><!--end of post-->
-			<?php endwhile; ?>
+			<?php endwhile;  wp_reset_query(); ?>
 			<div class="paging">
 				<?php echo paginate_links( array(
 					'prev_text'=> __('« Previous'),
