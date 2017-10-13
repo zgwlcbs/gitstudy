@@ -41,7 +41,7 @@
 				$current_category = single_cat_title('', false);//获得当前分类目录名称
 				return get_cat_ID($current_category);//获得当前分类目录ID
 			}
-					/**
+			/**
 			 * WordPress 添加面包屑导航 
 			 * https://www.wpdaxue.com/wordpress-add-a-breadcrumb.html
 			 */

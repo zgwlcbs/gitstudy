@@ -1,5 +1,23 @@
 body {
 	padding-top: 50px;
+	color: #778899
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #778899;
+}
+
+a:link,a:visited {
+	text-decoration: none;
+	color: #778899;
+}
+
+a span {
+	/*color: #000080;*/
+}
+
+a span:hover {
+	/*color: white;*/
 }
 
 .header {
@@ -7,7 +25,7 @@ body {
 }
 
 .header-logo {
-	float: left;
+	/*float: left;*/
 }
 
 .logo {
@@ -18,53 +36,85 @@ body {
 .logo-text {
 	margin: 20px 5px;
 	font-size: 20;
-	font-color: blue;
 	font-weight: bold;
+	color: #097999;
 }
 
 .navigator {
-	float: right;
+	height: 36px;
+	line-height: 20px;
+	background: #aaced1;
 }
 
 .border-right {
-	border-right: 1px solid #000;
+	border-right: 1px solid #fff;
+}
+
+.navigator ul {
+	padding: 0
 }
 
 .navigator ul li {
-	float: left;
-	margin: 5px 0;
+	display: inline-block;
+	margin: 8px 0 0;
 	padding: 0 10px;
 	list-style: none;
 }
-
-.navigator ul li a,
-.navigator ul li a:visited,
-.navigator ul li a:hover {
-	text-decoration: none;
+.navigator ul li a {
+	display: block;
+	width: 80px;
+	text-align: center;
 }
-	
+
+.navigator ul li a:link,.navigator ul li a:visited {
+	background-color: none;
+	color: #fff;
+}
+
 .navigator ul li a:hover {
-	background-color: yellow;
-	color: red;
+	/*background-color: #000080;*/
+	font-size: 1.1em;
+	color: #5F9EA0;
 }
 
 .slider {
-	background-color: #E6E6FA;
+	background-color: #EEE;
 	margin: 20px auto;
+	border-radius: 10px;
 }
 
 .sidebar {
 	float: left;
-	border: 5px solid black;
+	border: 1px solid #E6E6FA;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #EEE;
+}
+
+.sidebar ul {
+	list-style-type: square;
+	margin-left: 0;
+}
+
+.sidebar ul li a:hover {
+	text-decoration: none;
+	background-color: #000080;
+	color: white;
+}
+.calendar_wrap table {
+	width: 100%;
 }
 
 .post-list {
 	float: right;
 	padding: 10px 10px;
+	background-color: #EEE;
+	border-radius: 10px;
 }
 
 .main-content-background {
-	background-color: #CCCCCC;
+	background-color: #EEE;
+	border-radius: 10px;
 }
 
 .post {
@@ -155,3 +205,5 @@ body {
 .clearboth {
 	clear: both;
 }
+
+.current{color: #097999}

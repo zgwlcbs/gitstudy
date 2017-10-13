@@ -4,7 +4,7 @@
 		<?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>
 	</div>
 	<div class="row">
-		<div class="col-md-4 col-sm-12 sidebar">
+		<div class="col-md-4 col-sm-12">
 			<?php get_sidebar(); ?>
 		</div>
 		<div class="col-md-7 col-sm-12 wrapper">
